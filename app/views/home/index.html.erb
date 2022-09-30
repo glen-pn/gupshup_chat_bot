@@ -1,4 +1,23 @@
 <div class="content <%= controller.controller_name %>">
-    <h1>Home#index</h1>
-    <p>Find me in app/views/home/index.html.erb</p>
+    <div class="user_info" email=<%= @user.email %> id=<%= @user.id %> uuid=<%= @user.uuid %> ></div>
+    <% 
+        @user.to_json
+    %>
+    <div class="title">
+        <h4>Hello <%= @user.email %></h4>
+        <span><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></span>
+    </div>
+    
+
+    <!-- chat box  -->
+    <div class="chat-container">
+
+        <div></div>
+
+
+
+        <div class="bottom-section">
+            <textarea class="input-box"></textarea><button class="sendbutton">Send Message</button>
+        </div>
+    </div>
 </div>
