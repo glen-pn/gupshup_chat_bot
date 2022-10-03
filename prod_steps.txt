@@ -1,0 +1,4 @@
+1. Add production value in database.yml.
+2. Update config/environments/production.rb to include devise action_mailer 
+   related changes.
+3. 
