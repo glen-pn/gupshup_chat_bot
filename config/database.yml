@@ -33,3 +33,11 @@ test:
 # production:
 #   <<: *default
 #   database: db/production.sqlite3
+production: 
+  adapter: postgresql
+  encoding: unicode
+  database: gupshup_chat_bot
+  pool: 5
+  username: root
+  password:
+  host: localhost

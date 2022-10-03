@@ -13,7 +13,7 @@ gem "sprockets-rails"
 # gem "sqlite3", "~> 1.4"
 
 # Use mysql2 as the database for Active Record
-gem "mysql2"
+# gem "mysql2"
 
 # Use devise for authentication/authorization
 gem "devise"
@@ -60,6 +60,8 @@ group :development, :test do
 end
 
 group :development do
+  # Use mysql2 as the database for Active Record
+  gem "mysql2"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -71,8 +73,14 @@ group :development do
 end
 
 group :test do
+  # Use mysql2 as the database for Active Record
+  gem "mysql2"
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+end
+
+group :production do 
+  gem "pg"
 end
