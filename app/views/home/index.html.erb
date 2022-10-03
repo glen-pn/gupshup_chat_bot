@@ -1,5 +1,5 @@
 <div class="content <%= controller.controller_name %>">
-    <div class="user_info" email=<%= @user.email %> id=<%= @user.id %> uuid=<%= @user.uuid %> ></div>
+    <div class="user_info" email=<%= @user.email %> id=<%= @user.id %> uuid=<%= @user.uuid %> is_support=<%= @user.is_support %> ></div>
     <% 
         @user.to_json
     %>
