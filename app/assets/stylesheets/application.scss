@@ -78,5 +78,39 @@
             height: 40px;
          }
       }
+
+      .chat-box {
+         height: 650px;
+         padding: 10px;
+         
+         .chat-item {
+            padding: 10px;
+            border: 1px solid #73918d;
+            color: 73918d;
+            border-radius: 15px 50px 30px 0px;
+            margin-bottom: 10px;
+            width: 40%;
+
+            .right {
+               float: right !important;
+               border-radius: 50px 15px 0px 30px !important;
+            }
+         }
+
+         .options {
+            margin-bottom: 20px;
+
+            .selectItems {
+               border: 1px solid blue;
+               margin-left: 30px;
+               padding: 5px;
+               border-radius: 4px;
+            }
+   
+            .selectItems:hover {
+               cursor: pointer;
+            }
+         }  
+      }
    }
  }
