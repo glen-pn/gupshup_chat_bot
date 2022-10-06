@@ -86,13 +86,16 @@
          .chat-item {
             padding: 10px;
             border: 1px solid #73918d;
-            color: 73918d;
+            background-color: #73918d;
+            color: white;
             border-radius: 15px 50px 30px 0px;
             margin-bottom: 10px;
             width: 40%;
 
             .right {
                float: right !important;
+               color: #73918d !important;
+               background-color: white !important;
                border-radius: 50px 15px 0px 30px !important;
             }
          }
