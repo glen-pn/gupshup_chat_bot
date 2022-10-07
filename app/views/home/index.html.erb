@@ -113,6 +113,8 @@ $(document).ready(function() {
                     }
                 
                     $('.chat-box').append(markup);
+                    var objDiv = document.querySelector(".chat-box");
+                    objDiv.scrollTop = objDiv.scrollHeight;
     
                     $('.selectItems').off('click').on('click', function(e) {
                         if ($(this).hasClass('inactive')) {
@@ -158,6 +160,8 @@ $(document).ready(function() {
           console.log(status);
           console.log(response);
         });
+
+        $('.input-box').val('');
     });
 
     pubnub.addListener({
@@ -173,6 +177,8 @@ $(document).ready(function() {
                 
 
                 $('.chat-box').append(markup);
+                var objDiv = document.querySelector(".chat-box");
+                    objDiv.scrollTop = objDiv.scrollHeight;
             }
         }
     });
