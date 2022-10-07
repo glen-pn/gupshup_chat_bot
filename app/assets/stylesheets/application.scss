@@ -77,6 +77,10 @@
             float: right;
             height: 40px;
          }
+
+         .hide-message {
+            display: none;
+         }
       }
 
       .chat-box {
@@ -90,6 +94,7 @@
             color: white;
             border-radius: 15px 50px 30px 0px;
             margin-bottom: 10px;
+            margin-top: 20px;
             width: 40%;
 
             .right {
@@ -104,7 +109,9 @@
             margin-bottom: 20px;
 
             .selectItems {
-               border: 1px solid blue;
+               border: 1px solid grey;
+               background-color: grey;
+               color: white;
                margin-left: 30px;
                padding: 5px;
                border-radius: 4px;
@@ -114,6 +121,18 @@
                cursor: pointer;
             }
          }  
+      }
+   }
+ }
+
+ .is-support {
+   .content.home .title {
+      background-image: linear-gradient(to right,#82765c , white);
+   }
+
+   .content.home {
+      .chat-container {
+         background-color: #e6e9e0;
       }
    }
  }
