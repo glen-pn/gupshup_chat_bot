@@ -101,7 +101,10 @@ $(document).ready(function() {
                         markup += `
                             <div class="chat-item">${m.message.text}</div>
                         `;
-
+                        if(m.message.text == "Sorry, I didn't understand that. I can help you with the following...") {
+                            window.location.reload();
+                            return;
+                        }
                         if(m.message.text == "Please enter query here...") {
                             // initiate support channel chat...
                             pubnub.subscribe({ channels: ["customer_care"] });
