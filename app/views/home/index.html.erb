@@ -105,6 +105,7 @@ $(document).ready(function() {
                         if(m.message.text == "Please enter query here...") {
                             // initiate support channel chat...
                             pubnub.subscribe({ channels: ["customer_care"] });
+                            $('.bottom-section').show();
                         }
                     }
                 
@@ -134,6 +135,7 @@ $(document).ready(function() {
         });
     } else {
         pubnub.subscribe({ channels: ["customer_care"] })
+        $('.bottom-section').show();
     }
 
     $('.sendbutton').off('click').on('click', function(e) {

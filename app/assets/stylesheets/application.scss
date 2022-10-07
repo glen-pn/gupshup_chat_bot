@@ -63,6 +63,7 @@
       }
 
       .bottom-section {
+         display: none;
          position: absolute;
          bottom: 0;
          width: 100%;
@@ -133,6 +134,12 @@
    .content.home {
       .chat-container {
          background-color: #e6e9e0;
+
+         .chat-box {
+            .chat-item {
+               background-color: #82765c;
+            }
+         }
       }
    }
  }
